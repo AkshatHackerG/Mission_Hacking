@@ -1,0 +1,352 @@
+/* CSS Reset */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.9;
+    height: 0%;
+    width: 100%;
+}
+
+#logo{
+    margin: 10px 34px;
+    height: 2rem;
+    /* margin: 3px 26px; */
+    font-size: 1.6rem;
+    font-family: 'Fraunces', serif;
+    color: greenyellow;
+}
+
+.nav-mid ul{
+    display: flex;
+    font-family: 'Karla', sans-serif;
+    padding: 40px 333px;
+}
+
+.nav-mid ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+.nav-mid ul li a{
+    color: white;
+    display: block;
+    padding: 6px 26px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.nav-mid ul li a:hover{
+    background-color: white;
+    color: deeppink;
+    cursor: pointer;
+}
+
+.nav-btn{
+    display: inline-block;
+    right: 40px;
+    top: 20px;
+    position: absolute;
+}
+
+.btn{
+    font-family: 'Karla', sans-serif;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid gray;
+    border-radius: 14px;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: deeppink;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 428px;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../img/main_bg.jpeg') no-repeat center center/cover;
+    height: 550px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: .95;
+}
+
+#home h1{
+    color: yellow;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.home-btn{
+    font-family: 'Karla', sans-serif;
+    margin: 35px 10px;
+    padding: 10px 10px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid gray;
+    border-radius: 14px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.home-btn:hover{
+    background-color: white;
+    color: deeppink;
+}
+
+/* Courses Section */
+#courses{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 200px;
+    height: 620px;
+}
+
+#courses::before{
+    content: "";
+    position: absolute;
+    background: url('../img/main.jpg') no-repeat center center/cover;
+    height: 626px;
+    width: 100%;
+    z-index: -1;
+    opacity: .95;
+}
+
+#courses .box{
+    border: 2px solid white;
+    padding: 74px 82px;
+    margin: 16px 30px;
+    border-radius: 69px;
+    background: transparent;
+    margin-bottom: 12px;
+    height: 415px;
+    text-align: center;
+}
+
+#courses .box p{
+    font-size: 1.6rem;
+    color: white;
+}
+
+#courses h1{
+    text-align: center;
+    color: cyan;
+    height: 200px;
+    padding: 48px;
+}   
+
+#courses h2{
+    color: rgb(255, 72, 0);
+    font-weight: 500;
+    font-size: 2.3rem;
+}
+
+.course-btn{
+    padding: 13px 18px;
+    margin: 11px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+    border-radius: 20px;
+}
+
+.course-btn a{
+    text-decoration: none;
+
+}
+
+.course-btn a:visited{
+    color: deeppink;
+    background-color: transparent;
+}
+
+.course-btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: white;
+}
+
+/* Practice Container */
+#practice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 200px;
+    height: 685px
+}
+
+#practice::before{
+    content: "";
+    position: absolute;
+    height: 691px;
+    background: url('../img/courses.jpg') no-repeat center center/cover;
+    width: 100%;
+    z-index: -1;
+    opacity: .90;
+}
+
+#practice h1{
+    color: rgb(255, 0, 136);
+    padding: 34px 4px;
+    font-size: 4rem;
+    height: 239px;
+}
+
+.practice-box{
+    padding: 77px 43px;
+}
+
+#practice p{
+    font-size: 2.3rem;
+    color: black;
+}
+
+.practice-box a img{
+    border: 3px solid black;
+    border-radius: 35px;
+    height: 118px;
+    width: 282px;
+    padding: 15px 13px;
+    margin: 1px 6px;
+}
+
+/* Contact Us */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('../img/Contact.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .80;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding-bottom: 0.8rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.7rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+#contact-box button{
+    padding: 4px 59px;
+    font-size: 22px;
+    border-radius: 10px;
+    margin: 6px 568px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+#contact-box button:hover{
+    background: white;
+    color: deeppink;
+}
+
+#about{
+    background: #484b55;
+    width: 100%;
+    height: 150px;
+}
+
+#about h1{
+    color: black;
+    font-size: 3rem;
+    font-family: 'Karla', sans-serif;
+}
+
+#about p{
+    color: lightseagreen;
+    font-size: 2rem;
+}
+
+/* Footer Section  */
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Karla', sans-serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.text-center{
+    text-align: center;
+} 
